@@ -47,3 +47,9 @@ import {b, c} from './file.js';
 import * as letters from './file.js'; 
 console.log(letters.b, letters.c);  // letters is object 
 
+// dynamic import
+
+import(modulePath)
+  .then(obj => "obj of module")
+  .catch(err => err)
+
